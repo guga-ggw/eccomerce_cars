@@ -1,0 +1,1222 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@500;600;700&family=Edu+SA+Beginner:wght@700&family=Gabarito&family=Goldman:wght@400;700&family=IBM+Plex+Mono:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,900;1,700&family=Victor+Mono:ital,wght@0,500;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #f6ead4 ;
+}
+
+nav{
+    width: 100%;
+    height: 8vh;
+    background-color: #b4a284;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+    z-index: 200;
+}
+
+#logo_text{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 55px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-shadow: 3px 5px 2px gray;
+    cursor: pointer;
+}
+
+.link_list{
+    font-size: 20px;
+    font-family: 'Gabarito', cursive;
+    display: flex;
+    gap: 68px;
+    align-items: center;
+
+}
+#nav_link{
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px black;
+}
+#nav_link:nth-child(4){
+    margin-left: 60px;
+}
+
+.link_list i {
+    font-size: 30px;
+}
+
+.CreatePage{
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fill_form{
+    width: 1800px;
+    height: 900px;
+    background-color: rgba(113, 111, 108, 0.228);
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    animation: 2s displayform;
+}
+
+.fill_form label{
+    animation: 1s ease-in apearlabel;
+}
+
+.fill_form input{
+    animation: 2s ease-in appearinpt;
+}
+
+.fill_form h2{
+    animation: 2s ease-in apearlabel;
+}
+
+textarea {
+    animation: 2s ease-in appearinpt;
+}
+#image_form{
+    width: 50%;
+    height: 700px;
+    outline: none;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-family: sans-serif;
+}
+
+.image_fills {
+    width: 100%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.14);
+    border: 2px dashed rgb(0, 153, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    overflow: hidden;
+}
+.text_fill {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+#imginput{
+    padding-left: 20px;
+    width: 700px;
+    outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 20px;
+}
+
+#car_detail_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#car_detail_form label, .side_image_form label {
+    color: rgb(33, 33, 33);
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
+}
+  #errprice{
+    width: 500px;
+    box-shadow: 1px px 20px 1px solid red;
+    background-color: red;
+    color: red;
+}
+
+#errmileaege, #errmanufactured, #errmodel, .errbrend {
+    color: rgb(33, 33, 33);
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding-left: 20px;
+    width: 400px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid rgb(190, 9, 9);
+    border-radius: 4px;
+    box-shadow: 2px 5px 10px 1px rgb(125, 1, 1);
+}
+
+#errdesc{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    width: 550px;
+    height: 200px;
+    outline: none;
+    padding: 6px;
+    border: none;
+    background: transparent;
+    border-radius: 4px;
+    border: 2px solid red;
+    box-shadow: 2px 5px 10px 1px rgb(250, 3, 3);
+    padding-top: 0;
+}
+
+#car_detail_form #inftxt{
+    color: rgb(33, 33, 33);
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding-left: 20px;
+    width: 400px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid black;
+    border-radius: 4px;
+    box-shadow: 2px 5px 10px 1px black;
+}
+
+.brend{
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    background-color:transparent;
+    border: none;
+    box-shadow: 2px 3px 10px 1px black;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'roboto';
+}
+
+.side_image_form select {
+    width: 200px;
+    height: 29px;
+    margin-top: 8px;
+    background-color: #f6ead4;
+    box-shadow: 2px 5px 10px 1px black;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding-left: 10px;
+    outline: none;
+}
+
+#car_detail_form option {
+    cursor: pointer;
+    background-color: #b4a284;
+    font-family: sans-serif;
+    font-weight: 800;
+    color: rgb(33, 33, 33);
+}
+
+#price_input{
+    width: 500px;
+    box-shadow: 1px 1px 2px 5px solid red;
+    background-color: red;
+    color: red;
+}
+
+.side_image_form{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.up_sel, .down_sel {
+    width: 100%;
+    height: 50%;
+    justify-content: space-around;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.image_part{
+    width: 60%;
+}
+
+#desc_input {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    width: 550px;
+    height: 200px;
+    outline: none;
+    padding: 6px;
+    border: none;
+    background: transparent;
+    border-radius: 4px;
+    box-shadow: 2px 5px 10px 1px black;
+    padding-top: 0;
+}
+
+#car_detail_form button{
+    margin-top: 57px;
+    border: none;
+    outline: none;
+    box-shadow: 2px 4px 7px 1px black;
+    border-radius: 92px;
+    background-color: #b4a284;
+    width: 200px;
+    height: 35px;
+    cursor: pointer;
+    color: white;
+    font-family: 'roboto', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+
+#car_detail_form button:active{
+    box-shadow: 2px 2px 2px 1px black;
+}
+
+#errored_fill form label{
+    color: rgba(255, 0, 0, 0.743);
+    text-shadow: 2px 1px 5px rgba(255, 0, 0, 0.597);
+}
+
+#errored_fill #inftxt, #errored_fill #desc_input{
+    color: rgba(255, 0, 0, 0.635);
+    border: 1px solid red;
+    box-shadow: 2px 1px 15px 1px red;
+}
+
+#err_image_fill{
+    border: 2px dashed rgb(255, 0, 0);
+    box-shadow: 2px 1px 10px 1px red;
+}
+
+#errored_fill #car_detail_form button{
+    box-shadow: 2px 4px 10px 1px red;
+    color: red;
+}
+
+.contact_fill{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 1s;
+    width: 600px;
+    height: 800px;
+    background-color: rgba(90, 58, 34, 0.562);
+    border-radius: 40px;
+    font-family: 'Gabarito', cursive;
+    color: #f6ead4 ;
+    gap: 30px;
+}
+
+.contact_form_inputes{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact_form_inputes input {
+    width: 400px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #f6ead4;
+    color: #ffffff;
+    font-family:'roboto' sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding-left: 20px;
+}
+
+.gender_inpt{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.gender_inpt input {
+    width: 20px;
+    -ms-hyphenate-limit-zone: 20px;
+}
+
+.contact_form_inputes button{
+    margin-top: 30px;
+    width: 150px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    box-shadow: 2px 4px 6px 1px #f6ead4;
+    color: #f5efe3;
+    border-radius: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#err_uss_label{
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 1px 10px rgba(255, 0, 0, 0.171);
+}
+
+#err_uss_input{
+    color: red;
+    border: 1.4px solid red;
+    box-shadow: 2px 1px 10px 4px rgba(255, 0, 0, 0.626);
+}
+
+.contact_header i{
+    margin-left: -20px;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+.Finished_form{
+    width: 700px;
+    height: 400px;
+    background-color: red;
+    border-radius: 10px;
+    background-color: #b4a284;
+}
+
+.Finished_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+#MainButton_Link{
+    width: 200px;
+    height: 34px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 12px 9px 10px 1px #ba9454a9;
+    color: rgb(33, 33, 33);
+    letter-spacing: 0.7px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.Card{
+    width: 550px;
+    height: 450px;
+    background-color: #b4a284;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.Card:hover img {
+    transform: scale(1.2); 
+    transition: transform 0.7s ease; 
+  }
+.card_img_box{
+    width: 100%;
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.card_img_box img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.card_car_price{
+    position: absolute;
+    font-family: cursive;
+    color: #ffffff;
+    right: 0px;
+    bottom: 0px;
+    font-size: 20px;
+    background-color: #b4a284;
+    padding-top: 10px;
+    text-align: end;
+    border-top-left-radius: 20px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+   width: fit-content;
+   padding-left: 10px;
+    color: white;
+    text-shadow: 2px 3px 5px rgb(35, 33, 33);
+    z-index: 20;
+}
+
+.car_info_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Car_model{
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-shadow: 2px 3px 5px rgb(35, 33, 33);
+}
+
+#edit_icon{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    color: rgb(255, 174, 0);
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#remove_icon{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    color: rgb(250, 40, 12);
+    font-size: 30px;
+    cursor: pointer;
+}
+.model_type h3{
+    transform: translateX(150%);
+}
+
+.card_car_type{
+    position: absolute;
+    font-family: cursive;
+    color: #ffffff;
+    left: 0px;
+    bottom: 0px;
+    font-size: 20px;
+    text-shadow: 2px 4px 1px white;
+    background-color: #b4a284;
+    color: white;
+    text-shadow: 2px 3px 5px rgb(35, 33, 33);
+    padding-top: 10px;
+    padding-left: 10px;
+    border-top-right-radius: 20px;
+    padding-bottom: 10px;
+    width: fit-content;
+    padding-right: 20px;
+    text-align: start;
+    z-index: 20;
+}
+
+.card_description{
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.car_info_box button {
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 7px 1px rgba(0, 0, 0, 0.551);
+    color: rgb(35, 33, 33);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.Main_Container{
+    overflow: hidden;
+    height: 92vh;
+    gap: 200px;
+}
+
+#animated_MainPage .right_part{
+    animation: 1s appear;
+}
+
+#animated_MainPage .right_part img{
+    animation: 2s ease-in appearcar;
+}
+
+#animated_MainPage #create_product_txt{
+    animation: 2s ease-in appeartxt;
+}
+
+#animated_MainPage #look_product_txt{
+    animation:  2s ease-in appeartxt;
+}
+
+.right_part{
+    position: relative;
+    right: -1700px;
+    top: -100px;
+    width: 45%;
+    height:150vh;
+    background-color: rgb(174, 128, 87);
+    transform: rotate(40deg);
+}
+
+.right_part img{
+    pointer-events: none;
+    width: 900px;
+    left: -55%;
+    top: 50%;
+    transform: translate(0px, -50%);
+    position: absolute;
+    height: 400px;
+    transform: rotate(-40deg);
+}
+
+#create_product_txt{
+    transition: 1s;
+    position: absolute;
+    top: 60%;
+    color: rgb(174, 128, 87);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 120px;
+    left: 80px;
+    cursor: pointer;
+}
+
+#look_product_txt:hover{
+    left: 380px;
+}
+
+#create_product_txt:hover{
+    left: 130px;
+}
+
+
+#look_product_txt{
+    transition: 1s;
+    position: absolute;
+    top: 35%;
+    color: rgb(174, 128, 87);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 120px;
+    left: 320px;
+    cursor: pointer;
+}
+
+#img_drop_txt{
+    font-family: 'roboto';
+    cursor: pointer;
+    text-shadow: 2px 4px 5px white;
+}
+
+.focused_card{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carInformation_container{
+    gap: 20px;
+    padding-top: 50px;
+    width: 60%;
+    height: 122vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 200px;
+    align-items: center;
+}
+
+.Main_carInfo{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+}
+
+.year_model_txt{
+    padding-left: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 30px;
+    position: relative;
+
+}
+
+.year_model_txt h1{
+    color: rgb(33, 33, 33);
+    font-family: 'roboto' ;
+    letter-spacing: 0.7px;
+    font-size: 40px;
+}
+
+.year_model_txt h4{
+    color: rgba(33, 33, 33, 0.605);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    padding-top: 7px;
+    letter-spacing: 1.7px;
+    font-weight: 900;
+
+}
+
+.Main_carInfo img{
+    padding-top: 10px;
+    width: 77%;
+    height: 800px;
+    border-radius: 20px;
+}
+
+.More_carInfo{
+    overflow: hidden;
+    margin-top: 0px;
+    display: flex;
+    width: 77%;
+    height: 300px;
+    background-color: #b4a284;
+    border-radius: 40px;
+    justify-content: space-between;
+}
+
+.description_formCard{
+    width: 40%;
+    height: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.description_formCard h2{
+    font-family: 'roboto';
+}
+
+.description_formCard p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.moreInfo_formCard{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+}
+
+.moreInfo_labels, .moreInfo_information{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.moreInfo_labels{
+    font-family: 'roboto';
+    font-size: 27px;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.598);
+}
+
+.moreInfo_information{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    gap: 437x;
+    font-weight: 800;
+}
+
+.userInformation_container{
+    padding-top: 20px;
+    margin-right: 200px;
+    width: 30%;
+    height: 30vh;
+    background-color: #b4a284;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 400px;
+    position: relative;
+    border-radius: 30px;
+}
+
+#carprice{
+    right: 250px;
+    top: 0px;
+    position: absolute;
+    color: rgb(33, 33, 33);
+    font-family: 'roboto' ;
+    letter-spacing: 0.7px;
+    font-size: 40px;
+}
+
+.userInformation {
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.userInformation label{
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-family: 'roboto' ;
+    font-size: 30px;
+    text-shadow: 1px 1px 5px rgb(33, 33, 33);
+
+}
+
+.userInformation button{
+    width: 200px;
+    height: 36px;
+    border: none;
+    color: rgb(33, 33, 33);
+    font-family: 'roboto' ;
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 2px 5px 10px 1px black;
+}
+
+.userInfo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid grey;
+    border-radius: 30px;
+    
+}
+
+.userInfo img{
+    border-radius: 50%;
+    width: 80px;
+}
+
+.mailgen{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 10px;
+    justify-content: center;
+    margin-left: 20px;
+    text-shadow: 1px 1px 5px rgb(33, 33, 33);
+    font-family: 'roboto';
+    letter-spacing: 0.5px;
+}
+
+
+.overlay_verification{
+    width: 100%;
+    height: 150;
+    background-color: rgba(0, 0, 0, 0.654);
+    position: absolute;
+    z-index: 200;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.verification_box{
+    width: 600px;
+    height: 650px;
+    background-color: #b4a284;
+    border-radius: 30px;
+    position: relative;
+    animation: modul 2s ease;
+    transition: 2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.verification_box h1{
+    color: white;
+    font-family: 'roboto';
+    margin-top: 100px;
+}
+.verification_box i {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.verification_box input{
+    width: 300px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    padding-left: 10px;
+}
+
+.verification_box label{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.verification_box button{
+    width: 200px;
+    height: 45px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: 'roboto';
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    box-shadow: 2px 1px 5px 1px black;
+    background-color: transparent;
+    color: white;
+}
+
+.verification_form{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.verification_form div{
+    display: flex;
+    flex-direction: column;
+}
+
+#checkbox_remove{
+    margin-top: 10px;
+    border-radius: 500px;
+}
+
+#errpasauth, #erremailauth {
+    border-bottom: 2px solid red;
+}
+
+#erremailauthlabel {
+    color: rgb(175, 56, 56);
+    text-shadow: 2px 4px 10px red;
+}
+
+.store_cars{
+    padding-top: 100px;
+    width: 100%;
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.filter_container{
+    padding-top: 100px;
+    width: 70vw;
+    height: 300px;
+    background-color: #b4a284;
+    border-radius: 20px;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.filter_container div{
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter_container label{
+    margin-bottom: 20px;
+    color: rgb(33, 33, 33);
+    font-family: 'roboto';
+
+}
+
+#more_filter_opt{
+    gap: 30px;
+    flex-direction: row;
+}
+
+#more_filter_opt  select {
+    width: 200px;
+    height: 39px;
+    margin-top: 8px;
+    background-color: #f6ead4;
+    box-shadow: 2px 5px 10px 1px black;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding-left: 10px;
+    outline: none;
+}
+
+#more_filter_opt label{
+    margin-bottom: 5px;
+    color: rgb(33, 33, 33);
+    font-size: 15px;
+}
+
+.items_car_container{
+    padding-top: 150px;
+    justify-content: center;
+    margin-top: 100px;
+    width: 80vw;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+}
+
+#list_header{
+    font-size: 40px;
+    top: 400px;
+    left: 350px;
+    position: absolute;
+    margin-top: 100px;
+    color: white;
+    font-family: 'roboto' ;
+    width: 400px;
+    padding-bottom: 20px;
+    color: rgb(174, 128, 87);
+    border-bottom: 4px solid rgb(174, 128, 87);;
+}
+
+
+.bought_frame{
+    font-size: 30px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 700px;
+    height: 300px;
+    background-color: rgba(8, 7, 7, 0.724);
+    border-radius: 50px;
+    text-align: center;
+    color: rgb(233, 233, 233);
+    font-family: 'roboto';
+    letter-spacing: 1px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    z-index: 900;
+    transition: 1s;
+    animation: 2s ease appearinpt;
+}
+
+.bought_frame button {
+    width: 200px;
+    height: 36px;
+    border: none;
+    color: rgb(33, 33, 33);
+    font-family: 'roboto' ;
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 2px 5px 10px 1px black;
+}
+
+.overlay{
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 99.1vw;
+    height: 200vh;
+    background-color: rgba(0, 0, 0, 0.646);
+}
+
+#favorited{
+    transition: 0.5s;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    color: rgb(240, 172, 0);
+    font-size: 30px;
+    cursor: pointer;
+}
+#favorite{
+    transition: 0.5s;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    color: rgb(80, 80, 80);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.Store_page{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.categories{
+    width: 20%;
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.boughtList{
+    padding: 20px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.inventory_list{
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-top: 40px;
+    display: flex;
+    gap: 30px;
+}
+
+#inventory_txt{
+    font-family: 'roboto';
+    font-family: 'roboto' ;
+    width: 400px;
+    padding-bottom: 20px;
+    color: rgb(174, 128, 87);
+    border-bottom: 4px solid rgb(174, 128, 87);;
+
+}
+
+
+
+
+@keyframes modul {
+    0%{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+}
+
+@keyframes appear{
+    0%{
+        right: -1700px;
+        top: 200px;
+    }
+}
+
+
+@keyframes appearinpt{
+    0%{
+        opacity: 0;
+    }
+}
+
+@keyframes appearcar{
+    0%{
+        left: -20%;
+        top: -55%;
+    }
+}
+
+@keyframes appeartxt{
+    0%{
+        opacity: 0.1;
+        left: -1000px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes apearlabel{
+    0%{
+        opacity: 0;
+        font-size: 5px;
+    }
+}
+
+
+@keyframes displayform{
+    0%{
+        opacity: 0;
+    }
+}
+
+@keyframes wheel {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+
